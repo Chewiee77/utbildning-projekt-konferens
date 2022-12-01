@@ -1,0 +1,162 @@
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(38, 0, 55, 0.8),
+      rgba(110, 51, 134, 0.8)
+    ),
+    url(../img/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo {
+  background-color: var(--color-primary-light-2);
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+}
+
+.header__text-container {
+  width: 70vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text-light-1);
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.header__text {
+  width: 100%;
+  animation: moveInRight 1s ease-out;
+}
+
+.header__text--main {
+  width: 100%;
+  font-size: 6rem;
+  font-weight: var(--font-bold);
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__text .header__text--main-2 {
+  transform: translateX(15rem);
+}
+.header__text--secondary {
+  font-size: 3.5rem;
+  font-weight: var(--font-bold);
+  animation: moveInLeft 1s ease-out;
+}
+.header__text--tertiary {
+  font-size: 6rem;
+  font-weight: var(--font-bold);
+  margin-bottom: 6rem;
+  transform: translateX(-7rem);
+  animation: moveInLeft2 1s ease-out;
+}
+
+.header__text--year {
+  position: absolute;
+  font-size: 10rem;
+  font-weight: var(--font-bold);
+  top: 11rem;
+  right: 4rem;
+  transform: scale(1.5);
+  animation: yearPulse 1s ease-out 0.8s;
+  animation-fill-mode: backwards;
+  background-image: linear-gradient(
+    to right,
+    var(--color-text-light-2),
+    var(--color-text-light-1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  80% {
+    transform: translateX(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-7rem);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes yearPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(1.5);
+  }
+}

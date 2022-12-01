@@ -12,19 +12,119 @@
     />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/landingpage.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
     <title>Digi Royal Conferences: Karlstad 9/12 - 11/12 2022</title>
   </head>
   <body>
-    <nav class="nav">Navigation bar</nav>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__btn">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__popin">&nbsp;</div>
 
-    <header class="header">Hero</header>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#"
+              class="navigation__link"
+              ><span>01</span>About</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#benefits"
+              class="navigation__link"
+              ><span>02</span>Speakers</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#schedule"
+              class="navigation__link"
+              ><span>03</span>Schedule</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#"
+              class="navigation__link"
+              ><span>04</span>Gallery</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#"
+              class="navigation__link"
+              ><span>05</span>Testimonials</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#"
+              class="navigation__link"
+              ><span>06</span>Book now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <nav class="nav">
+      <div class="nav__logo">LOGO HERE</div> -->
+    <!-- TODO: Logo, img or svg? change to the semantic html and style accordingly -->
+    <!-- <ul class="nav__list">
+        <li class="nav__list-item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Speakers</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Scedule</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Gallery</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Testimonials</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Book now</a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <header class="header">
+      <div class="header__logo">LOGO HERE</div>
+      <div class="header__text-container">
+        <h1 class="header__text">
+          <span class="header__text--main header__text--main-1"
+            >Webdeveloper
+            <span class="header__text--main header__text--main-2"
+              >Conference</span
+            ></span
+          >
+        </h1>
+
+        <p class="header__text--secondary">Karlstad</p>
+        <p class="header__text--tertiary">9/12 - 11/12</p>
+        <p class="header__text--year">2022</p>
+
+        <a href="" class="btn btn--light btn--animated">See our speakers</a>
+      </div>
+    </header>
 
     <main>
       <section class="about">About section</section>
 
       <section class="speakers">Theese are some of the speakers</section>
 
-      <section class="schedule">3 day schedule</section>
+      <section id="schedule" class="schedule">3 day schedule</section>
 
       <section class="gallery">
         <div class="gallery-container">img gallery</div>
@@ -48,4 +148,8 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    function closeNav() {}
+  </script>
 </html>
