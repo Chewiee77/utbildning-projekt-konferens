@@ -1,6 +1,6 @@
 :root {
   /* COLORS */
-  --color-primary: #4b0063;
+  --color-primary: #16001e;
   --color-primary-light-1: #5d1a7d;
   --color-primary-light-2: #6f3386;
   --color-primary-dark-1: #3c0058;
@@ -45,7 +45,7 @@ body {
   line-height: 1.6;
   color: var(--color-text-dark-1);
   padding: 3rem;
-  background-color: var(--color-text-light-1);
+  background-color: var(--color-text-light-1-);
 }
 
 /* BUTTON STYLING --------------------------------------------- */
