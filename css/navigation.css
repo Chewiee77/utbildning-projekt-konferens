@@ -155,7 +155,7 @@
 /* NAV FUNCTION ------------------------------- */
 
 .navigation__checkbox:checked ~ .navigation__popin {
-  transform: scale(80);
+  transform: scale(100);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;

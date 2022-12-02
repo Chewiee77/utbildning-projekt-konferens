@@ -22,6 +22,8 @@
 
   /* BREAKPOINTS */
 
+  --bp-largest: 75em; /* 1200px */
+  --bp-medium: 56.25em; /* 900px */
   --bp-medium: 56.25em; /* 900px */
 }
 
@@ -36,6 +38,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -107,4 +110,10 @@ btn:visited {
 
 /* NAVIGATION MINIMALISTIC */
 
-/* HEADER ------------------------ */ ;
+/* HEADER ------------------------ */
+
+@media only screen and (max-width: 75em) {
+  body {
+    padding: 0;
+  }
+}
