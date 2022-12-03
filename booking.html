@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/landingpage.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/booking.css" />
+    <title>Digi Royal Bookings Karlstad 9/12 - 11/12</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__btn">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__popin">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#about"
+              class="navigation__link"
+              ><span>01</span>About</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#speakers"
+              class="navigation__link"
+              ><span>02</span>Speakers</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#schedule"
+              class="navigation__link"
+              ><span>03</span>Schedule</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#gallery"
+              class="navigation__link"
+              ><span>04</span>Gallery</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#testimonials"
+              class="navigation__link"
+              ><span>05</span>Testimonials</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              href="#booking"
+              class="navigation__link"
+              ><span>06</span>Book now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main></main>
+
+    <footer class="footer">
+      <div class="logo-placeholder">LOGO HERE</div>
+      <div class="footer-content">
+        <nav class="footer__nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="/landingpage/index.html#about" class="footer-nav__link"
+                >About</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a
+                href="/landingpage/index.html#speakers"
+                class="footer-nav__link"
+                >Speakers</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a
+                href="/landingpage/index.html#schedule"
+                class="footer-nav__link"
+                >Schedule</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Contact</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Careers</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">To top</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-content__text">
+          <div class="footer__socials">Icons for our socials</div>
+          <div class="copyright">
+            <p>
+              Built by <a href="#" class="footer__link">Andreas Andersson</a> as
+              part of the HTML/CCS course at folkuniversitet Karlstad. Copyright
+              &copy; by Andreas Andersson. You are 100% allowed to use this
+              webpage for both personal and commercial use, but not to claim it
+              as your own design. A credit to me, the author,
+              <a href="#" class="footer__link">Andreas Andersson</a>, is of
+              course highly appreciated!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

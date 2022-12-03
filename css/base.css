@@ -1,3 +1,28 @@
+/* COLOR CONVERSION: 
+#07000b = rgb(7, 0, 11)
+#16001e = rgb(22, 0, 30)
+#260037 = rgb(38, 0, 55)
+#3c0058 = rgb(60, 0, 88)
+#5d1a7d = rgb(93, 26, 125)
+#6f3386 = rgb(111, 51, 134)
+#c9b3d0 = rgb(201, 179, 208)
+#ede6f1 = rgb(237, 230, 241)
+
+*/
+
+/* SHADOWS
+  light: 0 2rem 6rem rgba(rgb(22, 0, 30, 0.2));
+  dark: 0 2rem 6rem rgba(rgb(22, 0, 30, 0.2));
+   */
+
+/* BREAKPOINTS */
+
+/*--bp-largest: 75em;  1200px */
+/*--bp-medium: 62.5em;  1000px */
+/*--bp-medium: 56.25em;  900px */
+/*--bp-small: 43.75em;  700px */
+/*--bp-smallest: 37.5em;  600px */
+
 :root {
   /* COLORS */
   --color-primary: #16001e;
@@ -15,16 +40,6 @@
   --font-bold: 700;
   --font-thin: 300;
   --font-thinest: 100;
-
-  /* SHADOWS */
-  --shadow-light: 0 1rem 4rem rgba(var(var(--color-primary-dark-2) 0.1));
-  --shadow-dark: 0 2rem 6rem rgba(var(var(--color-primary-dark-2) 0.9));
-
-  /* BREAKPOINTS */
-
-  --bp-largest: 75em; /* 1200px */
-  --bp-medium: 56.25em; /* 900px */
-  --bp-medium: 56.25em; /* 900px */
 }
 
 *,
@@ -49,6 +64,7 @@ body {
   color: var(--color-text-dark-1);
   padding: 3rem;
   background-color: var(--color-text-light-1-);
+  overflow-x: hidden;
 }
 
 /* BUTTON STYLING --------------------------------------------- */
@@ -63,9 +79,19 @@ btn:visited {
   font-size: 1.8rem;
   padding: 1.5rem 4rem;
   border-radius: 20rem;
+  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.3);
 
   border: none;
   cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.4);
 }
 
 .btn--light {
@@ -115,5 +141,15 @@ btn:visited {
 @media only screen and (max-width: 75em) {
   body {
     padding: 0;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
   }
 }

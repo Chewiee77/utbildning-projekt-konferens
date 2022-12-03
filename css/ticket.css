@@ -1,0 +1,212 @@
+.ticket {
+  position: relative;
+  perspective: 150rem;
+  height: 52rem;
+}
+
+.ticket__side {
+  height: inherit;
+  font-size: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.2);
+}
+
+.ticket__side--front {
+  background-color: var(--color-text-light-1);
+}
+
+.ticket__side--back {
+  transform: rotateY(180deg);
+}
+
+.ticket__side--back-1 {
+  background-image: linear-gradient(
+    var(--color-primary-dark-1),
+    var(--color-text-light-1)
+  );
+}
+.ticket__side--back-2 {
+  background-image: linear-gradient(
+    var(--color-primary),
+    var(--color-primary-light-2)
+  );
+}
+.ticket__side--back-3 {
+  background-image: linear-gradient(
+    var(--color-primary-dark-2),
+    var(--color-text-light-2)
+  );
+}
+
+.ticket:hover .ticket__side--front {
+  transform: rotateY(-180deg);
+}
+.ticket:hover .ticket__side--back {
+  transform: rotateY(0deg);
+}
+
+.ticket__img {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.ticket__img--1 {
+  background-image: linear-gradient(
+      var(--color-primary-dark-1),
+      var(--color-text-light-1)
+    ),
+    url(../img/pexels-henri-mathieusaintlaurent-8349431.jpg);
+}
+.ticket__img--2 {
+  background-image: linear-gradient(
+      var(--color-primary),
+      var(--color-primary-light-2)
+    ),
+    url(../img/pexels-henri-mathieusaintlaurent-8348624.jpg);
+}
+.ticket__img--3 {
+  background-image: linear-gradient(
+      var(--color-primary-dark-2),
+      var(--color-text-light-2)
+    ),
+    url(../img/pexels-matheus-bertelli-3321802.jpg);
+}
+
+.ticket__heading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--color-text-light-1);
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 75%;
+}
+
+.ticket__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.ticket__heading-span--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(22, 0, 30, 0.85),
+    rgba(201, 179, 208, 0.85)
+  );
+}
+.ticket__heading-span--2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(22, 0, 30, 0.85),
+    rgba(201, 179, 208, 0.85)
+  );
+}
+.ticket__heading-span--3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(22, 0, 30, 0.85),
+    rgba(201, 179, 208, 0.85)
+  );
+}
+
+.ticket__details {
+  padding: 3rem;
+}
+
+.ticket__details > ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ticket__details > ul > li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.ticket__details > ul > li:not(:last-child) {
+  border-bottom: 1px solid var(--color-text-light-2);
+}
+
+/* BACK ----------------------------------------------- */
+
+.ticket__cta {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.ticket__price-box {
+  color: var(--color-text-light-1);
+  margin-bottom: 8rem;
+}
+.ticket__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.ticket__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .ticket {
+    height: auto;
+    border-radius: 3px;
+    background-color: var(--color-text-light-1);
+  }
+  .ticket__side {
+    height: inherit;
+    position: relative;
+    box-shadow: none;
+  }
+  .ticket__side--back {
+    transform: rotate(0deg);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+  .ticket:hover .ticket__side--front {
+    transform: rotateY(0deg);
+  }
+  .ticket:hover .ticket__side--back {
+    transform: rotateY(0deg);
+  }
+
+  /* Back-side content ----------------------------- */
+
+  .ticket__cta {
+    position: relative;
+    padding: 7rem 4rem 4rem 4rem;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+  }
+
+  .ticket__price-box {
+    margin-bottom: 2rem;
+  }
+
+  .ticket__price-only {
+    font-size: 2.4rem;
+  }
+
+  .ticket__price-value {
+    font-size: 6rem;
+    font-weight: 300;
+  }
+}
