@@ -287,12 +287,43 @@
 }
 
 .speaker__item {
+  max-width: 70rem;
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 
 .speaker__img {
   width: 100%;
   height: 25vw;
+  object-fit: fill;
+}
+
+.speaker__img--animated {
+  animation: reveal 0.3s ease-in 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes reveal {
+  0% {
+    filter: blur(10px) hue-rotate(90deg);
+  }
+
+  25% {
+    filter: blur(7.5px) hue-rotate(67deg);
+    transform: scale(1.5) rotate(90deg);
+  }
+  50% {
+    filter: blur(5px) hue-rotate(45deg);
+    transform: scale(2) rotate(180deg);
+  }
+  75% {
+    filter: blur(2.5px) hue-rotate(45deg);
+    transform: scale(1.5) rotate(270deg);
+  }
+
+  100% {
+    filter: blur(0);
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .speaker__item-z {
@@ -364,7 +395,7 @@
   }
   .speaker__item {
     justify-self: center;
-    width: 80%;
+    max-width: 70rem;
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
   }
   .speaker__item-z {

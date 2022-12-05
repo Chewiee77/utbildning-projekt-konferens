@@ -29,7 +29,7 @@
           <li class="navigation__item">
             <a
               onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="#about"
+              href="/landingpage/index.html#about"
               class="navigation__link"
               ><span>01</span>About</a
             >
@@ -37,41 +37,34 @@
           <li class="navigation__item">
             <a
               onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="#speakers"
+              href="/landingpage/index.html#speakers"
               class="navigation__link"
               ><span>02</span>Speakers</a
             >
           </li>
+
           <li class="navigation__item">
             <a
               onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="#schedule"
+              href="/landingpage/index.html#gallery"
               class="navigation__link"
-              ><span>03</span>Schedule</a
+              ><span>03</span>Gallery</a
             >
           </li>
           <li class="navigation__item">
             <a
               onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="#gallery"
+              href="/landingpage/index.html#testimonials"
               class="navigation__link"
-              ><span>04</span>Gallery</a
+              ><span>04</span>Testimonials</a
             >
           </li>
           <li class="navigation__item">
             <a
               onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="#testimonials"
+              href="/landingpage/index.html#booking"
               class="navigation__link"
-              ><span>05</span>Testimonials</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a
-              onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="#booking"
-              class="navigation__link"
-              ><span>06</span>Book now</a
+              ><span>05</span>Book now</a
             >
           </li>
         </ul>
@@ -84,10 +77,12 @@
           <form action="#" class="form">
             <p class="form-heading">Get your spot now!</p>
             <div class="form__input-box">
-              <label for="name" class="form__label">Name</label>
+              <label for="name" class="form__label form__label--main"
+                >Name</label
+              >
               <input
                 type="text"
-                class="form__input"
+                class="form__input form__input--text"
                 id="name"
                 placeholder=""
                 autofocus
@@ -95,37 +90,45 @@
               />
             </div>
             <div class="form__input-box">
-              <label for="address" class="form__label">Address</label>
+              <label for="address" class="form__label form__label--main"
+                >Address</label
+              >
               <input
                 type="text"
-                class="form__input"
+                class="form__input form__input--text"
                 id="address"
                 placeholder=""
                 required
               />
             </div>
             <div class="form__input-box">
-              <label for="email" class="form__label">E-mail</label>
+              <label for="email" class="form__label form__label--main"
+                >E-mail</label
+              >
               <input
                 type="email"
-                class="form__input"
+                class="form__input form__input--text"
                 id="email"
                 placeholder=""
                 required
               />
             </div>
             <div class="form__input-box">
-              <label for="phone" class="form__label">Phone nr.</label>
+              <label for="phone" class="form__label form__label--main"
+                >Phone nr.</label
+              >
               <input
                 type="text"
-                class="form__input"
+                class="form__input form__input--text"
                 id="phone"
                 placeholder=""
                 required
               />
             </div>
-            <div class="form__input-box">
-              <label for="" class="input-box__label form__label"
+            <div class="form__input-box--radio">
+              <label
+                for=""
+                class="input-box__label form__label form__label--main"
                 >Food Options</label
               >
               <div class="form__input--radio-container">
@@ -138,7 +141,9 @@
                     name="food"
                     required
                   />
-                  <label for="meat" class="form__label">Meat</label>
+                  <label for="meat" class="form__label form__label--radio"
+                    >Meat</label
+                  >
                 </div>
                 <div class="form__input--radio">
                   <input
@@ -148,7 +153,9 @@
                     placeholder=""
                     name="food"
                   />
-                  <label for="fish" class="form__label">Fish</label>
+                  <label for="fish" class="form__label form__label--radio"
+                    >Fish</label
+                  >
                 </div>
                 <div class="form__input--radio">
                   <input
@@ -158,12 +165,16 @@
                     placeholder=""
                     name="food"
                   />
-                  <label for="veg" class="form__label">Vegetarian</label>
+                  <label for="veg" class="form__label form__label--radio"
+                    >Vegetarian</label
+                  >
                 </div>
               </div>
             </div>
-            <div class="form__input-box">
-              <label for="" class="input-box__label form__label"
+            <div class="form__input-box--radio">
+              <label
+                for=""
+                class="input-box__label form__label form__label--main"
                 >Food Allergies</label
               >
               <div class="form__input--radio-container">
@@ -175,7 +186,9 @@
                     name="choices"
                     required
                   />
-                  <label for="lactos" class="form__label">lactos</label>
+                  <label for="lactos" class="form__label form__label--radio"
+                    >lactos</label
+                  >
                 </div>
                 <div class="form__input--radio">
                   <input
@@ -184,7 +197,9 @@
                     id="gluten"
                     name="choices"
                   />
-                  <label for="gluten" class="form__label">gluten</label>
+                  <label for="gluten" class="form__label form__label--radio"
+                    >gluten</label
+                  >
                 </div>
                 <div class="form__input--radio">
                   <input
@@ -193,7 +208,9 @@
                     id="nuts"
                     name="choices"
                   />
-                  <label for="nuts" class="form__label">nuts</label>
+                  <label for="nuts" class="form__label form__label--radio"
+                    >nuts</label
+                  >
                 </div>
                 <div class="form__input--radio">
                   <input
@@ -202,7 +219,7 @@
                     id="other"
                     name="choices"
                   />
-                  <label for="other" class="form__label"
+                  <label for="other" class="form__label form__label--radio"
                     ><input
                       type="text"
                       class="form__input form__input--allergy"
@@ -210,10 +227,24 @@
                       placeholder="Other"
                   /></label>
                 </div>
+                <div class="form__input--radio">
+                  <input
+                    type="radio"
+                    class="form__input"
+                    id="none"
+                    name="choices"
+                    checked
+                  />
+                  <label for="none" class="form__label form__label--radio"
+                    >none</label
+                  >
+                </div>
               </div>
             </div>
-            <div class="form__input-box">
-              <label for="" class="input-box__label form__label"
+            <div class="form__input-box--radio">
+              <label
+                for=""
+                class="input-box__label form__label form__label--main"
                 >Choose your pass</label
               >
               <div class="form__input--radio-container">
@@ -223,10 +254,12 @@
                     class="form__input"
                     id="oneday"
                     placeholder=""
-                    name="food"
+                    name="days"
                     required
                   />
-                  <label for="oneday" class="form__label">one day pass</label>
+                  <label for="oneday" class="form__label form__label--radio"
+                    >one day pass</label
+                  >
                 </div>
                 <div class="form__input--radio">
                   <input
@@ -234,9 +267,11 @@
                     class="form__input"
                     id="twoday"
                     placeholder=""
-                    name="food"
+                    name="days"
                   />
-                  <label for="twoday" class="form__label">two day pass</label>
+                  <label for="twoday" class="form__label form__label--radio"
+                    >two day pass</label
+                  >
                 </div>
                 <div class="form__input--radio">
                   <input
@@ -244,17 +279,23 @@
                     class="form__input"
                     id="threeday"
                     placeholder=""
-                    name="food"
+                    name="days"
                   />
-                  <label for="threeday" class="form__label"
+                  <label for="threeday" class="form__label form__label--radio"
                     >three day pass</label
                   >
                 </div>
               </div>
             </div>
-            <button class="btn form__btn">Confirm</button>
+            <div class="form__btn-container">
+              <button class="btn btn--form btn--confirm">Confirm!</button>
+              <button class="btn btn--form btn--clear" type="reset">
+                Clear!
+              </button>
+            </div>
           </form>
         </div>
+        <div class="form-empty">&nbsp;</div>
       </section>
     </main>
 
@@ -283,10 +324,14 @@
               >
             </li>
             <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Contact</a>
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Contact</a
+              >
             </li>
             <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Careers</a>
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Careers</a
+              >
             </li>
             <li class="footer-nav__item">
               <a href="#" class="footer-nav__link">To top</a>

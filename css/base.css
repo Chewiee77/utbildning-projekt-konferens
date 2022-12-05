@@ -17,6 +17,7 @@
 
 /* BREAKPOINTS */
 
+/*--bp-huge: 112.5em;  1600px */
 /*--bp-largest: 75em;  1200px */
 /*--bp-medium: 62.5em;  1000px */
 /*--bp-medium: 56.25em;  900px */
@@ -36,6 +37,9 @@
   --color-text-dark-1: #07000b;
   --color-text-light-1: #ede6f1;
   --color-text-light-2: #c9b3d0;
+
+  --color-valid: #0b6b0b;
+  --color-invalid: #7d003b;
 
   /* FONTS */
   --font-boldest: 900;
@@ -79,21 +83,21 @@ btn:visited {
   text-transform: uppercase;
   font-weight: var(--font-bold);
   font-size: 1.8rem;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem;
   border-radius: 20rem;
-  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.3);
-
+  box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.3);
+  min-width: 15rem;
   border: none;
   cursor: pointer;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.2);
+  box-shadow: 0 2rem 2rem rgba(22, 0, 30, 0.2);
 }
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.4);
+  box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.4);
 }
 
 .btn--light {

@@ -24,7 +24,7 @@
   z-index: 2000;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.2);
+  box-shadow: 0 2rem 6rem rgba(22, 0, 30, 0.3);
 }
 
 .navigation__popin {
