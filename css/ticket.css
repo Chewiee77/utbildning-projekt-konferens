@@ -64,21 +64,21 @@
       var(--color-primary-dark-1),
       var(--color-text-light-1)
     ),
-    url(../img/pexels-henri-mathieusaintlaurent-8349431.jpg);
+    url(../img/pexels-henri-mathieusaintlaurent-8349431.webp);
 }
 .ticket__img--2 {
   background-image: linear-gradient(
       var(--color-primary),
       var(--color-primary-light-2)
     ),
-    url(../img/pexels-henri-mathieusaintlaurent-8348624.jpg);
+    url(../img/pexels-henri-mathieusaintlaurent-8348624.webp);
 }
 .ticket__img--3 {
   background-image: linear-gradient(
       var(--color-primary-dark-2),
       var(--color-text-light-2)
     ),
-    url(../img/pexels-matheus-bertelli-3321802.jpg);
+    url(../img/pexels-matheus-bertelli-3321802.webp);
 }
 
 .ticket__heading {

@@ -6,7 +6,7 @@
       rgba(22, 0, 30, 0.8),
       rgba(60, 0, 88, 0.8)
     ),
-    url(../img/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg);
+    url(../img/alexandre-pellaes-6vAjp0pscX0-unsplash.webp);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
