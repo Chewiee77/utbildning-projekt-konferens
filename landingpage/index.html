@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landingpage for a fictional conference in Karlstad, arranged by the fictional company Digi Royal"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,20 +46,13 @@
               ><span>02</span>Speakers</a
             >
           </li>
-          <li class="navigation__item">
-            <a
-              onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="#schedule"
-              class="navigation__link"
-              ><span>03</span>Schedule</a
-            >
-          </li>
+
           <li class="navigation__item">
             <a
               onclick="document.querySelector('.navigation__checkbox').checked=false"
               href="#gallery"
               class="navigation__link"
-              ><span>04</span>Gallery</a
+              ><span>03</span>Gallery</a
             >
           </li>
           <li class="navigation__item">
@@ -63,7 +60,7 @@
               onclick="document.querySelector('.navigation__checkbox').checked=false"
               href="#testimonials"
               class="navigation__link"
-              ><span>05</span>Testimonials</a
+              ><span>04</span>Testimonials</a
             >
           </li>
           <li class="navigation__item">
@@ -71,7 +68,7 @@
               onclick="document.querySelector('.navigation__checkbox').checked=false"
               href="#booking"
               class="navigation__link"
-              ><span>06</span>Book now</a
+              ><span>05</span>Book now</a
             >
           </li>
         </ul>
@@ -138,12 +135,17 @@
             </div>
           </div>
           <div class="about__text-content">
-            <p class="about__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-              consequatur exercitationem odit laudantium totam? Ad quia
-              voluptates qui dolore incidunt ipsa! Quibusdam exercitationem
-              necessitatibus excepturi aliquam blanditiis dignissimos eligendi
-              voluptates.
+            <p class="about__text about__text--large">
+              2016 marked the beginning of something extraordinary!
+            </p>
+            <p class="about__text about__text--small">
+              Since that year we have brought together the most inspiring people
+              shaping digital content.
+            </p>
+            <p class="about__text about__text--small">
+              Our speakers are always focused on inspiring you with ideas you
+              can take action on. Focusing on both designing and building
+              digital!
             </p>
           </div>
         </div>
@@ -160,14 +162,12 @@
             />
           </figure>
           <div class="speaker__text-content">
-            <h3 class="speaker__heading">Jeff Halevy</h3>
-            <h4 class="speaker__keynote">Keynote is about:</h4>
+            <h3 class="speaker__heading">Jeff Bloom</h3>
+            <h4 class="speaker__keynote">Laying the grid:</h4>
             <p class="speaker__usp">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              dolor quia distinctio saepe tempora, numquam quasi ab laboriosam
-              cum explicabo veritatis labore fugit ipsum tenetur maxime
-              blanditiis? Omnis obcaecati eveniet voluptate illo magni fugiat,
-              temporibus veritatis quaerat iste. Cumque, sed.
+              Why should you use CSS grid!? Jeff explains in a passionate way
+              the power of the grid and why it is such a powerfull tool for
+              creating amazing and responsive layouts
             </p>
           </div>
         </div>
@@ -181,13 +181,11 @@
           </figure>
           <div class="speaker__text-content">
             <h3 class="speaker__heading">Mary Wright</h3>
-            <h4 class="speaker__keynote">Keynote is about:</h4>
+            <h4 class="speaker__keynote">Prototyping in Figma:</h4>
             <p class="speaker__usp">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              dolor quia distinctio saepe tempora, numquam quasi ab laboriosam
-              cum explicabo veritatis labore fugit ipsum tenetur maxime
-              blanditiis? Omnis obcaecati eveniet voluptate illo magni fugiat,
-              temporibus veritatis quaerat iste. Cumque, sed.
+              Get a better knowledge in Figma. Learn to master Components, auto
+              layout, variants and prototyping. These are the key tools in
+              making your life with Figma more enjoyable.
             </p>
           </div>
         </div>
@@ -201,13 +199,11 @@
           </figure>
           <div class="speaker__text-content">
             <h3 class="speaker__heading">John Bauer</h3>
-            <h4 class="speaker__keynote">Keynote is about:</h4>
+            <h4 class="speaker__keynote">Should we animate:</h4>
             <p class="speaker__usp">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              dolor quia distinctio saepe tempora, numquam quasi ab laboriosam
-              cum explicabo veritatis labore fugit ipsum tenetur maxime
-              blanditiis? Omnis obcaecati eveniet voluptate illo magni fugiat,
-              temporibus veritatis quaerat iste. Cumque, sed.
+              Learn the awesomness of animations. When, where and what should we
+              animate? Can there be to much animations? Join John as he dives
+              deep into animations in CSS.
             </p>
           </div>
         </div>
@@ -325,18 +321,17 @@
                 alt="Happy visitor"
                 class="story__img"
               />
-              <figcaption class="story__caption">Andreas Andersson</figcaption>
+              <figcaption class="story__caption">Lisa Myhr</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
+              <h3 class="heading-story">
                 I came back to work bursting with inspiration!
               </h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
-                nihil sed, esse sapiente accusantium necessitatibus consectetur
-                dolores provident, cupiditate fugit quae nemo laborum voluptas
-                deleniti, ipsum exercitationem ex quo et! Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit.
+                The Webdeveloper conference is so inspiring. Coming to this
+                place every year fills me with inspiration, knowledge and ideas
+                that lasts a long time. The speakers are great and passionate
+                about the subject they speak about, and the food is great to!
               </p>
             </div>
           </div>
@@ -348,18 +343,17 @@
                 alt="Happy visitor"
                 class="story__img"
               />
-              <figcaption class="story__caption">Andreas Andersson</figcaption>
+              <figcaption class="story__caption">Ivan Byh</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Lorem ipsum dolor sit.
+              <h3 class="heading-story">
+                I always leave these days filled with energy
               </h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
-                nihil sed, esse sapiente accusantium necessitatibus consectetur
-                dolores provident, cupiditate fugit quae nemo laborum voluptas
-                deleniti, ipsum exercitationem ex quo et! Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit.
+                Everyone and everything needs to refuel now and then. This
+                conference is the best place for me to recharge my batteries and
+                revitalize my passion in webdevelopment. If you aspire to become
+                a better developer you really should come!
               </p>
             </div>
           </div>
@@ -505,7 +499,7 @@
               ><img src="/img/instagram.svg" alt="instagram logo"
             /></a>
             <a href="https://twitter.com/Chewiee77"
-              ><img src="/img/twitter.svg" alt="twitter logo" target="_blank"
+              ><img src="/img/twitter.svg" alt="twitter logo" target="_blankl"
             /></a>
             <a href="https://www.twitch.tv/chewiee77"
               ><img src="/img/twitch.svg" alt="twitch logo" target="_blank"

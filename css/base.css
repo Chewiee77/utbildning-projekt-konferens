@@ -89,6 +89,7 @@ btn:visited {
   min-width: 15rem;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -101,8 +102,28 @@ btn:visited {
 }
 
 .btn--light {
+  position: relative;
   background-color: var(--color-text-light-1);
   color: var(--color-primary-dark-2);
+}
+
+.btn--light::after {
+  content: "";
+  display: inline-block;
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transition: all 0.5s;
+}
+
+.btn--light:hover::after {
+  transform: scale(1.4, 1.6);
+  opacity: 0;
 }
 
 /* NOTE: TOP NAV -----------------------------------------------------------------------  */
