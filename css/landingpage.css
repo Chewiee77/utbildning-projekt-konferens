@@ -156,7 +156,7 @@
   }
   100% {
     opacity: 1;
-    transform: translate(1.5);
+    transform: scale(1.5);
   }
 }
 
@@ -450,7 +450,7 @@
     grid-row: 1 / 2;
   }
   .speaker__img {
-    width: 100;
+    width: 100%;
   }
 }
 
