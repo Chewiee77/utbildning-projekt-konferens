@@ -53,7 +53,7 @@ main {
 .form__input-box--radio {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .form__label {
@@ -97,7 +97,8 @@ main {
   gap: 2rem;
 }
 
-.form__input--radio > input[type="radio"] {
+.form__input--radio > input[type="radio"],
+.form__input--radio > input[type="checkbox"] {
   opacity: 0;
   position: fixed;
   width: 0;
@@ -124,6 +125,14 @@ main {
   outline: var(--color-valid);
 }
 .form__input--radio > input[type="radio"]:focus ~ .form__label--radio {
+  outline: inset var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.2);
+}
+.form__input--radio > input[type="checkbox"]:checked ~ .form__label--radio {
+  background-color: var(--color-valid);
+  outline: var(--color-valid);
+}
+.form__input--radio > input[type="checkbox"]:focus ~ .form__label--radio {
   outline: inset var(--color-primary);
   box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.2);
 }
@@ -154,7 +163,12 @@ main {
   background-color: var(--color-valid);
 }
 .btn--clear {
-  background-color: var(--color-invalid);
+  background-image: linear-gradient(
+    to right,
+    var(--color-text-light-2),
+    var(--color-text-light-1)
+  );
+  color: var(--color-text-dark-1);
 }
 
 @media only screen and (max-width: 56.25em) {

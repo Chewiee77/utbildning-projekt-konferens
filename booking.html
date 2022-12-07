@@ -89,6 +89,7 @@
                 class="form__input form__input--text"
                 id="name"
                 placeholder=""
+                minlength="2"
                 autofocus
                 required
               />
@@ -102,6 +103,7 @@
                 class="form__input form__input--text"
                 id="address"
                 placeholder=""
+                minlength="3"
                 required
               />
             </div>
@@ -114,6 +116,7 @@
                 class="form__input form__input--text"
                 id="email"
                 placeholder=""
+                minlength="5"
                 required
               />
             </div>
@@ -126,6 +129,9 @@
                 class="form__input form__input--text"
                 id="phone"
                 placeholder=""
+                pattern="[0-9]{6 -14}"
+                minlength="6"
+                maxlength="20"
                 required
               />
             </div>
@@ -183,46 +189,25 @@
               >
               <div class="form__input--radio-container">
                 <div class="form__input--radio">
-                  <input
-                    type="radio"
-                    class="form__input"
-                    id="lactos"
-                    name="choices"
-                    required
-                  />
+                  <input type="checkbox" class="form__input" id="lactos" />
                   <label for="lactos" class="form__label form__label--radio"
                     >lactos</label
                   >
                 </div>
                 <div class="form__input--radio">
-                  <input
-                    type="radio"
-                    class="form__input"
-                    id="gluten"
-                    name="choices"
-                  />
+                  <input type="checkbox" class="form__input" id="gluten" />
                   <label for="gluten" class="form__label form__label--radio"
                     >gluten</label
                   >
                 </div>
                 <div class="form__input--radio">
-                  <input
-                    type="radio"
-                    class="form__input"
-                    id="nuts"
-                    name="choices"
-                  />
+                  <input type="checkbox" class="form__input" id="nuts" />
                   <label for="nuts" class="form__label form__label--radio"
                     >nuts</label
                   >
                 </div>
                 <div class="form__input--radio">
-                  <input
-                    type="radio"
-                    class="form__input"
-                    id="other"
-                    name="choices"
-                  />
+                  <input type="checkbox" class="form__input" id="other" />
                   <label for="other" class="form__label form__label--radio"
                     ><input
                       type="text"
@@ -233,10 +218,9 @@
                 </div>
                 <div class="form__input--radio">
                   <input
-                    type="radio"
+                    type="checkbox"
                     class="form__input"
                     id="none"
-                    name="choices"
                     checked
                   />
                   <label for="none" class="form__label form__label--radio"
