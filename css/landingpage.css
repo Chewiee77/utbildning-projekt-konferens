@@ -779,7 +779,7 @@
 
 @media only screen and (max-width: 37.5em) {
   .footer {
-    padding: 3rem 6rem;
+    padding: 3rem 4rem;
   }
   .footer-content {
     grid-template-columns: 1fr;
