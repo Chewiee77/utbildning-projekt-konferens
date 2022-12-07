@@ -73,7 +73,7 @@
   font-size: 10rem;
   font-weight: var(--font-bold);
   top: 11rem;
-  right: 4rem;
+  right: -1rem;
   transform: scale(1.5);
   animation: yearPulse 1s ease-out 0.8s;
   animation-fill-mode: backwards;
@@ -85,53 +85,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-
-.btn--centerd {
-  align-self: end;
-}
-
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
-}
-
-@media only screen and (max-width: 75em) {
-  .header__text-container {
-    width: auto;
-  }
-  .header__text--year {
-    right: -15rem;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  .header {
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  }
-  .header__text-container {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .header__text--main {
-    font-size: 4.8rem;
-  }
-  .header__text .header__text--main-2 {
-    transform: translateX(0);
-  }
-  .header__text--year {
-    position: relative;
-    right: 0;
-    top: 0;
-    margin-bottom: 2rem;
-  }
-  .header__text--tertiary {
-    transform: translateX(0);
-    margin-bottom: 0;
-  }
 }
 
 @keyframes moveInLeft {
@@ -206,6 +159,50 @@
   }
 }
 
+@media only screen and (max-width: 75em) {
+  .header__text-container {
+    width: auto;
+  }
+  .header__text--year {
+    right: -15rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+  .header__text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header__text--main {
+    font-size: 4.8rem;
+  }
+  .header__text .header__text--main-2 {
+    transform: translateX(0);
+  }
+  .header__text--year {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+  .header__text--tertiary {
+    transform: translateX(0);
+    margin-bottom: 0;
+  }
+}
+
+/* @media only screen and (min-width: 75em) {
+  .header__text--year {
+    right: -5rem;
+  }
+} */
+
 /* ABOUT SECTION ------------------------------------------------------ */
 
 .about {
@@ -267,6 +264,28 @@
 }
 .about__text--small {
   font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about-container {
+    grid-template-columns: 1fr;
+    padding: 2.4rem 0 12rem 0;
+  }
+  .heading-secondary {
+    padding: 4rem 2rem 0 0;
+    margin-bottom: 0;
+  }
+  .about__img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about {
+    padding: 15rem 2rem;
+  }
 }
 
 /* SPEAKERS-SECTION --------------------------------------------- */
@@ -486,13 +505,13 @@
   grid-area: 3 / 1 / span 3 / span 2;
 }
 .gallery__item--6 {
-  grid-area: 4 / 3 / span 2 / span 2;
+  grid-area: 5 / 5 / span 3 / 6;
 }
 .gallery__item--7 {
-  grid-area: 3 / 5 / span 3 / 6;
+  grid-area: 4 / 4 / span 4 / 5;
 }
 .gallery__item--8 {
-  grid-area: 3 / 6 / span 2 / 7;
+  grid-area: 4 / 3 / span 2 / 4;
 }
 .gallery__item--9 {
   grid-area: 3 / 7 / span 2 / span 2;
@@ -501,11 +520,18 @@
   grid-area: 6 / 1 / span 2 / span 3;
 }
 .gallery__item--11 {
-  grid-area: 6 / 4 / span 2 / span 2;
+  grid-area: 3 / 5 / span 2 / span 2;
 }
 .gallery__item--12 {
   grid-area: 5 / 6 / span 3 / span 3;
 }
+
+/* (max-width: 56.25em) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(14, 5vw);
+  }
+}@media only screen and  */
 
 /* TESTIMONIAL SECTION ---------------------------------- */
 
@@ -606,6 +632,17 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
+@media only screen and (max-width: 37.5em) {
+  .story {
+    flex-direction: column;
+    padding: 4rem;
+  }
+  .story__shape {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 /* BOOKING SECTION ----------------------------------------- */
 
 .bookings {
@@ -630,6 +667,17 @@
     grid-template-columns: 1fr;
     row-gap: 6.4rem;
     padding: 0 15rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .ticket-container {
+    padding: 0 3rem;
+    column-gap: 6rem;
+  }
+
+  .ticket__recomend {
+    transform: scale(1);
   }
 }
 
@@ -705,4 +753,16 @@
   color: var(--color-text-light-1);
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    padding: 3rem 6rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  .footer-content__text {
+    border: none;
+  }
 }

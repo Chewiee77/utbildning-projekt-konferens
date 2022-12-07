@@ -126,6 +126,15 @@ btn:visited {
   opacity: 0;
 }
 
+.btn--centerd {
+  align-self: end;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
 /* NOTE: TOP NAV -----------------------------------------------------------------------  */
 
 /* .nav {

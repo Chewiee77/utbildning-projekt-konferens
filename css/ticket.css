@@ -133,7 +133,7 @@
 
 .ticket__details > ul > li {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 1rem;
 }
 .ticket__details > ul > li:not(:last-child) {
@@ -164,6 +164,20 @@
   font-weight: 100;
 }
 
+@media only screen and (hover: none) {
+  .ticket__details {
+    padding: 0;
+  }
+
+  .ticket__cta {
+    padding: 4rem;
+  }
+
+  .ticket__price-box {
+    margin-bottom: 3rem;
+  }
+}
+
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .ticket {
     height: auto;
@@ -190,11 +204,11 @@
 
   .ticket__cta {
     position: relative;
-    padding: 7rem 4rem 4rem 4rem;
     top: 0;
     left: 0;
     transform: translate(0);
     width: 100%;
+    padding: 4rem;
   }
 
   .ticket__price-box {

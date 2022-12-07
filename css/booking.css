@@ -6,7 +6,7 @@ main {
   height: 100vh;
   margin: 6rem 0;
   background-color: var(--color-primary);
-  clip-path: polygon(0 20%, 25% 0, 100% 20%, 100% 85%, 70% 100%, 0 80%);
+  clip-path: polygon(0 20%, 25% 0, 100% 15%, 100% 85%, 70% 100%, 0 85%);
 }
 
 .booking-container {
@@ -45,9 +45,9 @@ main {
 .form__input-box {
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   flex-wrap: wrap;
-  width: 100%;
+  width: 60%;
 }
 
 .form__input-box--radio {
@@ -74,7 +74,7 @@ main {
 .form__input {
   font-size: 1.6rem;
   color: var(--color-text-dark-1);
-
+  width: 70%;
   border: none;
 }
 
@@ -157,19 +157,55 @@ main {
   background-color: var(--color-invalid);
 }
 
-@media only screen and (min-width: 100em) {
-  .booking-container {
-    width: 120rem;
-  }
-}
 @media only screen and (max-width: 56.25em) {
+  .form {
+    width: 100%;
+  }
   .form__input-box {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
+  }
+
+  .form__input {
+    font-size: 2.4rem;
+  }
+  .form__input--allergy {
+    font-size: 1.6rem;
   }
   .form__btn-container {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+  .booking-container {
+    background-image: linear-gradient(
+        var(--color-light-opacity-8),
+        var(--color-light-opacity-8)
+      ),
+      url(/img/wes-lewis-zt6OxRORM2g-unsplash.webp);
+  }
+  .form__btn-container {
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .booking {
+    clip-path: polygon(0 15%, 25% 0, 100% 15%, 100% 85%, 70% 100%, 0 85%);
+  }
+  .form {
+    padding: 3.2rem;
+  }
+  .form__input-box {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 100em) {
+  .booking-container {
+    width: 120rem;
+  }
+  .form__input-box {
+    width: 50%;
   }
 }
