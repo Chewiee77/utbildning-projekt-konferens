@@ -193,7 +193,6 @@
     margin-bottom: 2rem;
   }
   .header__text--tertiary {
-    transform: translateX(0);
     margin-bottom: 0;
   }
 }
