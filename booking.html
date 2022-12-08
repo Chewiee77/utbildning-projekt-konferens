@@ -22,59 +22,59 @@
     <title>Digi Royal: Bookings for Karlstad 9/12 - 11/12</title>
   </head>
   <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" class="navigation__btn">
-        <span class="navigation__icon"></span>
-      </label>
-      <div class="navigation__popin">&nbsp;</div>
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="navigation__btn">
+      <span class="navigation__icon"></span>
+    </label>
+    <div class="navigation__popin">&nbsp;</div>
 
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a
-              onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="/landingpage/index.html#about"
-              class="navigation__link"
-              ><span>01</span>About</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a
-              onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="/landingpage/index.html#speakers"
-              class="navigation__link"
-              ><span>02</span>Speakers</a
-            >
-          </li>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#about"
+            class="navigation__link"
+            ><span>01</span>About</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#speakers"
+            class="navigation__link"
+            ><span>02</span>Speakers</a
+          >
+        </li>
 
-          <li class="navigation__item">
-            <a
-              onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="/landingpage/index.html#gallery"
-              class="navigation__link"
-              ><span>03</span>Gallery</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a
-              onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="/landingpage/index.html#testimonials"
-              class="navigation__link"
-              ><span>04</span>Testimonials</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a
-              onclick="document.querySelector('.navigation__checkbox').checked=false"
-              href="/landingpage/index.html#booking"
-              class="navigation__link"
-              ><span>05</span>Book now</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#gallery"
+            class="navigation__link"
+            ><span>03</span>Gallery</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#testimonials"
+            class="navigation__link"
+            ><span>04</span>Testimonials</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#booking"
+            class="navigation__link"
+            ><span>05</span>Book now</a
+          >
+        </li>
+      </ul>
+      <button class="navigation" aria-label="navigation-button"></button>
+    </nav>
+
     .
     <main>
       <section class="booking">
@@ -148,7 +148,6 @@
                     type="radio"
                     class="form__input"
                     id="meat"
-                    placeholder=""
                     name="food"
                     required
                   />
@@ -161,7 +160,6 @@
                     type="radio"
                     class="form__input"
                     id="fish"
-                    placeholder=""
                     name="food"
                   />
                   <label for="fish" class="form__label form__label--radio"
@@ -173,7 +171,6 @@
                     type="radio"
                     class="form__input"
                     id="veg"
-                    placeholder=""
                     name="food"
                   />
                   <label for="veg" class="form__label form__label--radio"
@@ -183,9 +180,7 @@
               </div>
             </div>
             <div class="form__input-box--radio">
-              <label
-                for=""
-                class="input-box__label form__label form__label--main"
+              <label class="input-box__label form__label form__label--main"
                 >Food Allergies</label
               >
               <div class="form__input--radio-container">
@@ -208,12 +203,12 @@
                   >
                 </div>
                 <div class="form__input--radio">
-                  <input type="checkbox" class="form__input" id="other" />
-                  <label for="other" class="form__label form__label--radio"
+                  <input type="checkbox" class="form__input" id="choose" />
+                  <label for="choose" class="form__label form__label--radio"
                     ><input
                       type="text"
                       class="form__input form__input--allergy"
-                      id="other"
+                      id="choose"
                       placeholder="Other"
                   /></label>
                 </div>
@@ -231,9 +226,7 @@
               </div>
             </div>
             <div class="form__input-box--radio">
-              <label
-                for=""
-                class="input-box__label form__label form__label--main"
+              <label class="input-box__label form__label form__label--main"
                 >Choose your pass</label
               >
               <div class="form__input--radio-container">
@@ -242,7 +235,6 @@
                     type="radio"
                     class="form__input"
                     id="oneday"
-                    placeholder=""
                     name="days"
                     required
                   />
@@ -255,7 +247,6 @@
                     type="radio"
                     class="form__input"
                     id="twoday"
-                    placeholder=""
                     name="days"
                   />
                   <label for="twoday" class="form__label form__label--radio"
@@ -267,7 +258,6 @@
                     type="radio"
                     class="form__input"
                     id="threeday"
-                    placeholder=""
                     name="days"
                   />
                   <label for="threeday" class="form__label form__label--radio"
