@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page that lists fictional speakers for a fictional conference in Karlstad, arranged by the fictional company Digi Royal"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/2x/Asset 1@2xfavicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/landingpage.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/ticket.css" />
+    <title>Digi Royal Speakers Attending in Karlstad</title>
+  </head>
+  <body>
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="navigation__btn">
+      <span class="navigation__icon"></span>
+    </label>
+    <div class="navigation__popin">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#about"
+            class="navigation__link"
+            ><span>01</span>About</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#speakers"
+            class="navigation__link"
+            ><span>02</span>Speakers</a
+          >
+        </li>
+
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#gallery"
+            class="navigation__link"
+            ><span>03</span>Gallery</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#testimonials"
+            class="navigation__link"
+            ><span>04</span>Testimonials</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#booking"
+            class="navigation__link"
+            ><span>05</span>Book now</a
+          >
+        </li>
+      </ul>
+      <button class="navigation" aria-label="navigation-button"></button>
+    </nav>
+
+    <main>
+      <section class="speakers" id="speakers">
+        <h2 class="heading-secondary heading-dark">Meet the speakers</h2>
+        <div class="speaker-container">
+          <figure class="speaker__item">
+            <img
+              src="/img/speaker-1.webp"
+              alt="Jeff leaning against the wall"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Jeff Bloom</h3>
+            <h4 class="speaker__keynote">Laying the grid</h4>
+            <h5 class="speaker__time">11:00 CEST 9/12</h5>
+            <p class="speaker__usp">
+              Why should you use CSS grid!? Jeff explains in a passionate way
+              the power of the grid and why it is such a powerfull tool for
+              creating amazing and responsive layouts
+            </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <figure class="speaker__item speaker__item-z">
+            <img
+              src="/img/speaker-2.webp"
+              alt="Mary posing for the camera"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Mary Wright</h3>
+            <h4 class="speaker__keynote">Prototyping in Figma</h4>
+            <h5 class="speaker__time">13:00 CEST 9/12</h5>
+            <p class="speaker__usp">
+              Get a better knowledge in Figma. Learn to master Components, auto
+              layout, variants and prototyping. These are the key tools in
+              making your life with Figma more enjoyable.
+            </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <figure class="speaker__item">
+            <img
+              src="/img/speaker-g1021fe064_1920.webp"
+              alt="John inspiring people on stage"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">John Bauer</h3>
+            <h4 class="speaker__keynote">Should we animate?</h4>
+            <h5 class="speaker__time">15:00 CEST 9/12</h5>
+            <p class="speaker__usp">
+              Learn the awesomness of animations. When, where and what should we
+              animate? Can there be to much animations? Join John as he dives
+              deep into animations in CSS.
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker-container">
+          <figure class="speaker__item speaker__item-z">
+            <img
+              src="/img/photo-1455354269813-737d9df115bb.jpg"
+              alt="Nils Nilsen looking serious with arms crossed"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Nils Nilsen</h3>
+            <h4 class="speaker__keynote">Digital accessibilty</h4>
+            <h5 class="speaker__time">09:00 CEST 10/12</h5>
+            <p class="speaker__usp">
+              Learn how to resolve accessibility issues that affect roughly 1
+              billon people worldwide. Nils guides us through implementing a
+              successfull WCAG 2.1 compliance program. Is it ok to sometimes
+              break the rules?
+            </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <figure class="speaker__item">
+            <img
+              src="/img/pexels-photo-235462.jpeg"
+              alt="Suzy standing infront of some stairs"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Suzy White</h3>
+            <h4 class="speaker__keynote">It's all about the form</h4>
+            <h5 class="speaker__time">11:00 CEST 10/12</h5>
+            <p class="speaker__usp">
+              Ever wondered how you should create your forms? Want to learn if
+              you can style them in a fun way? Suzy makes formdesign fun and
+              engaging.
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker-container">
+          <figure class="speaker__item speaker__item-z">
+            <img
+              src="/img/pexels-photo-253758.webp"
+              alt="Wilma posing for the camera"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Wilma Hughes</h3>
+            <h4 class="speaker__keynote">Git gud in GIT</h4>
+            <h5 class="speaker__time">13:00 CEST 10/12</h5>
+            <p class="speaker__usp">
+              How can you and your team be more agile using git. Learn the power
+              of version control and get an understanding on why you should
+              start using the terminal more.
+            </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <figure class="speaker__item">
+            <img
+              src="/img/pexels-photo-326546.jpeg"
+              alt="Jessie acting serious infront of cam"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Jessie Black</h3>
+            <h4 class="speaker__keynote">Understanding clip-path</h4>
+            <h5 class="speaker__time">15:00 CEST 9/12</h5>
+            <p class="speaker__usp">
+              Jessies gives us a tour in the wonderful world of clip-path. Learn
+              to master clip-path to make amazing content!
+            </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <figure class="speaker__item speaker__item-z">
+            <img
+              src="/img/pexels-mikael-blomkvist-6476778.webp"
+              alt="Karin giving a lecture"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Karin Olsson</h3>
+            <h4 class="speaker__keynote">The balance in life</h4>
+            <h5 class="speaker__time">11:00 CEST 11/12</h5>
+            <p class="speaker__usp">
+              Is life stressfull? How do we keep up with all the demands in
+              life? Want to get a better balance between work and privacy? If
+              yes yhen yhis one is for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker-container">
+          <figure class="speaker__item">
+            <img
+              src="/img/pexels-henri-mathieusaintlaurent-8349233.webp"
+              alt="Toby giving a relaxed lecture"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Toby Hansen</h3>
+            <h4 class="speaker__keynote">Passion for Logo's</h4>
+            <h5 class="speaker__time">13:00 CEST 11/12</h5>
+            <p class="speaker__usp">
+              Want to be able to design your own logos? Toby guides us through
+              the questions we should ask our clients, and shares his best
+              techniques in Adobe Illustrator.
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker-container">
+          <figure class="speaker__item speaker__item-z">
+            <img
+              src="/img/pexels-photo-671800.webp"
+              alt="Jenna posing for the camera"
+              class="speaker__img speaker__img--animated"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Jenna Gold</h3>
+            <h4 class="speaker__keynote">Getting onboard</h4>
+            <h5 class="speaker__time">15:00 CEST 11/12</h5>
+            <p class="speaker__usp">
+              Jenna shows us why we should journeymap the onboarding process.
+              Onboarding is the first thing our users experience, discover the
+              awesomeness of journeymapping.
+            </p>
+          </div>
+        </div>
+
+        <a href="/landingpage/index.html" class="speakers__link"
+          >Back to main page &rarr;</a
+        >
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/img/2x/Asset 1@2x.png" alt="Digi royal logo" />
+      </div>
+      <div class="footer-content">
+        <nav class="footer__nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="/landingpage/index.html#about" class="footer-nav__link"
+                >About</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a
+                href="/landingpage/index.html#speakers"
+                class="footer-nav__link"
+                >Speakers</a
+              >
+            </li>
+
+            <li class="footer-nav__item">
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Contact</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Careers</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">To top</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-content__text">
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+              target="_blank"
+              ><img src="/img/linkedin.svg" alt="linkedin logo"
+            /></a>
+            <a href="https://www.instagram.com/chewiee77_ttv/" target="_blank"
+              ><img src="/img/instagram.svg" alt="instagram logo"
+            /></a>
+            <a href="https://twitter.com/Chewiee77" target="_blank"
+              ><img src="/img/twitter.svg" alt="twitter logo"
+            /></a>
+            <a href="https://www.twitch.tv/chewiee77" target="_blank"
+              ><img src="/img/twitch.svg" alt="twitch logo"
+            /></a>
+            <a href="https://www.facebook.com/Chewiee77/" target="_blank"
+              ><img src="/img/facebook2.svg" alt="facebook logo"
+            /></a>
+          </div>
+          <div class="copyright">
+            <p>
+              Built by
+              <a
+                href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+                target="_blank"
+                class="footer__link"
+                >Andreas Andersson</a
+              >
+              as part of the HTML/CCS course at folkuniversitet Karlstad.
+              Copyright &copy; by Andreas Andersson. You are 100% allowed to use
+              this webpage for both personal and commercial use, but not to
+              claim it as your own design. A credit to me, the author,
+              <a
+                href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+                target="_blank"
+                class="footer__link"
+                >Andreas Andersson</a
+              >, is of course highly appreciated!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

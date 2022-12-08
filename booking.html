@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fictional bookingpage for a fictional conference in Karlstad, arranged by the fictional company Digi Royal"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/2x/Asset 1@2xfavicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/landingpage.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/booking.css" />
+    <title>Digi Royal: Bookings for Karlstad 9/12 - 11/12</title>
+  </head>
+  <body>
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="navigation__btn">
+      <span class="navigation__icon"></span>
+    </label>
+    <div class="navigation__popin">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#about"
+            class="navigation__link"
+            ><span>01</span>About</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#speakers"
+            class="navigation__link"
+            ><span>02</span>Speakers</a
+          >
+        </li>
+
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#gallery"
+            class="navigation__link"
+            ><span>03</span>Gallery</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#testimonials"
+            class="navigation__link"
+            ><span>04</span>Testimonials</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="/landingpage/index.html#booking"
+            class="navigation__link"
+            ><span>05</span>Book now</a
+          >
+        </li>
+      </ul>
+      <button class="navigation" aria-label="navigation-button"></button>
+    </nav>
+
+    .
+    <main>
+      <section class="booking">
+        <div class="booking-container">
+          <form action="#" class="form" autocomplete="on">
+            <p class="form-heading">Get your spot now!</p>
+            <div class="form__input-box">
+              <label for="name" class="form__label form__label--main"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="form__input form__input--text"
+                id="name"
+                placeholder=""
+                minlength="2"
+                autofocus
+                required
+              />
+            </div>
+            <div class="form__input-box">
+              <label for="address" class="form__label form__label--main"
+                >Address</label
+              >
+              <input
+                type="text"
+                class="form__input form__input--text"
+                id="address"
+                placeholder=""
+                minlength="3"
+                required
+              />
+            </div>
+            <div class="form__input-box">
+              <label for="email" class="form__label form__label--main"
+                >E-mail</label
+              >
+              <input
+                type="email"
+                class="form__input form__input--text"
+                id="email"
+                placeholder=""
+                minlength="5"
+                required
+              />
+            </div>
+            <div class="form__input-box">
+              <label for="phone" class="form__label form__label--main"
+                >Phone nr.</label
+              >
+              <input
+                type="text"
+                class="form__input form__input--text"
+                id="phone"
+                placeholder=""
+                pattern="[0-9]{6 -14}"
+                minlength="6"
+                maxlength="20"
+                required
+              />
+            </div>
+            <div class="form__input-box--radio">
+              <label
+                for=""
+                class="input-box__label form__label form__label--main"
+                >Food Options</label
+              >
+              <div class="form__input--radio-container">
+                <div class="form__input--radio">
+                  <input
+                    type="radio"
+                    class="form__input"
+                    id="meat"
+                    name="food"
+                    required
+                  />
+                  <label for="meat" class="form__label form__label--radio"
+                    >Meat</label
+                  >
+                </div>
+                <div class="form__input--radio">
+                  <input
+                    type="radio"
+                    class="form__input"
+                    id="fish"
+                    name="food"
+                  />
+                  <label for="fish" class="form__label form__label--radio"
+                    >Fish</label
+                  >
+                </div>
+                <div class="form__input--radio">
+                  <input
+                    type="radio"
+                    class="form__input"
+                    id="veg"
+                    name="food"
+                  />
+                  <label for="veg" class="form__label form__label--radio"
+                    >Vegetarian</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form__input-box--radio">
+              <label class="input-box__label form__label form__label--main"
+                >Food Allergies</label
+              >
+              <div class="form__input--radio-container">
+                <div class="form__input--radio">
+                  <input type="checkbox" class="form__input" id="lactos" />
+                  <label for="lactos" class="form__label form__label--radio"
+                    >lactos</label
+                  >
+                </div>
+                <div class="form__input--radio">
+                  <input type="checkbox" class="form__input" id="gluten" />
+                  <label for="gluten" class="form__label form__label--radio"
+                    >gluten</label
+                  >
+                </div>
+                <div class="form__input--radio">
+                  <input type="checkbox" class="form__input" id="nuts" />
+                  <label for="nuts" class="form__label form__label--radio"
+                    >nuts</label
+                  >
+                </div>
+                <div class="form__input--radio">
+                  <input type="checkbox" class="form__input" id="choose" />
+                  <label for="choose" class="form__label form__label--radio"
+                    ><input
+                      type="text"
+                      class="form__input form__input--allergy"
+                      id="choose"
+                      placeholder="Other"
+                  /></label>
+                </div>
+                <div class="form__input--radio">
+                  <input
+                    type="checkbox"
+                    class="form__input"
+                    id="none"
+                    checked
+                  />
+                  <label for="none" class="form__label form__label--radio"
+                    >none</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form__input-box--radio">
+              <label class="input-box__label form__label form__label--main"
+                >Choose your pass</label
+              >
+              <div class="form__input--radio-container">
+                <div class="form__input--radio">
+                  <input
+                    type="radio"
+                    class="form__input"
+                    id="oneday"
+                    name="days"
+                    required
+                  />
+                  <label for="oneday" class="form__label form__label--radio"
+                    >one day pass</label
+                  >
+                </div>
+                <div class="form__input--radio">
+                  <input
+                    type="radio"
+                    class="form__input"
+                    id="twoday"
+                    name="days"
+                  />
+                  <label for="twoday" class="form__label form__label--radio"
+                    >two day pass</label
+                  >
+                </div>
+                <div class="form__input--radio">
+                  <input
+                    type="radio"
+                    class="form__input"
+                    id="threeday"
+                    name="days"
+                  />
+                  <label for="threeday" class="form__label form__label--radio"
+                    >three day pass</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form__btn-container">
+              <button class="btn btn--form btn--confirm">Confirm!</button>
+              <button class="btn btn--form btn--clear" type="reset">
+                Clear!
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="form-empty">&nbsp;</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/img/2x/Asset 1@2x.png" alt="Digi royal logo" />
+      </div>
+      <div class="footer-content">
+        <nav class="footer__nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="/landingpage/index.html#about" class="footer-nav__link"
+                >About</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a
+                href="/landingpage/index.html#speakers"
+                class="footer-nav__link"
+                >Speakers</a
+              >
+            </li>
+
+            <li class="footer-nav__item">
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Contact</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Careers</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">To top</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-content__text">
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+              target="_blank"
+              ><img src="/img/linkedin.svg" alt="linkedin logo"
+            /></a>
+            <a href="https://www.instagram.com/chewiee77_ttv/" target="_blank"
+              ><img src="/img/instagram.svg" alt="instagram logo"
+            /></a>
+            <a href="https://twitter.com/Chewiee77" target="_blank"
+              ><img src="/img/twitter.svg" alt="twitter logo"
+            /></a>
+            <a href="https://www.twitch.tv/chewiee77" target="_blank"
+              ><img src="/img/twitch.svg" alt="twitch logo"
+            /></a>
+            <a href="https://www.facebook.com/Chewiee77/" target="_blank"
+              ><img src="/img/facebook2.svg" alt="facebook logo"
+            /></a>
+          </div>
+          <div class="copyright">
+            <p>
+              Built by
+              <a
+                href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+                target="_blank"
+                class="footer__link"
+                >Andreas Andersson</a
+              >
+              as part of the HTML/CCS course at folkuniversitet Karlstad.
+              Copyright &copy; by Andreas Andersson. You are 100% allowed to use
+              this webpage for both personal and commercial use, but not to
+              claim it as your own design. A credit to me, the author,
+              <a
+                href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+                target="_blank"
+                class="footer__link"
+                >Andreas Andersson</a
+              >, is of course highly appreciated!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

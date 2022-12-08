@@ -1,26 +1,56 @@
+/* COLOR CONVERSION: 
+#07000b = rgb(7, 0, 11)
+#16001e = rgb(22, 0, 30)
+#260037 = rgb(38, 0, 55)
+#3c0058 = rgb(60, 0, 88)
+#5d1a7d = rgb(93, 26, 125)
+#6f3386 = rgb(111, 51, 134)
+#c9b3d0 = rgb(201, 179, 208)
+#ede6f1 = rgb(237, 230, 241)
+
+*/
+
+/* SHADOWS
+  light: 0 2rem 6rem rgba(rgb(22, 0, 30, 0.2));
+  dark: 0 2rem 6rem rgba(rgb(22, 0, 30, 0.2));
+   */
+
+/* BREAKPOINTS */
+
+/*--bp-huge: 112.5em;  1600px */
+/*--bp-largest: 75em;  1200px */
+/*--bp-medium: 62.5em;  1000px */
+/*--bp-medium: 56.25em;  900px */
+/*--bp-small: 43.75em;  700px */
+/*--bp-smallest: 37.5em;  600px */
+
 :root {
   /* COLORS */
-  --color-primary: #4b0063;
+  --color-primary: #16001e;
   --color-primary-light-1: #5d1a7d;
   --color-primary-light-2: #6f3386;
   --color-primary-dark-1: #3c0058;
   --color-primary-dark-2: #260037;
 
+  --color-light-opacity-8: rgba(237, 230, 241, 0.8);
+
   --color-text-dark-1: #07000b;
   --color-text-light-1: #ede6f1;
+  --color-text-light-2: #c9b3d0;
+
+  --color-valid: #0b6b0b;
+  --color-invalid: #7d003b;
 
   /* FONTS */
   --font-boldest: 900;
   --font-bold: 700;
   --font-thin: 300;
   --font-thinest: 100;
-
-  /* SHADOWS */
-  --shadow-light: 0 1rem 4rem rgba(var(var(--color-primary-dark-2) 0.1));
-  --shadow-light: 0 1rem 4rem rgba(var(var(--color-primary-dark-2) 0.3));
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -29,11 +59,152 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-text-dark-1);
+  padding: 3rem;
+  background-color: var(--color-text-light-1-);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-text-light-1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-light-2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+::selection {
+  color: var(--color-text-dark-1);
+  background-color: var(--color-text-light-2);
+}
+
+/* BUTTON STYLING --------------------------------------------- */
+
+.btn,
+btn:link,
+btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: var(--font-bold);
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  /* border-radius: 20rem; */
+  transform: skewX(-12deg);
+  box-shadow: 1rem 1rem 2rem rgba(22, 0, 30, 0.3);
+  min-width: 15rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 2rem 2rem 2rem rgba(22, 0, 30, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 1rem 1rem 2rem rgba(22, 0, 30, 0.4);
+}
+
+.btn--light {
+  position: relative;
+  background-color: var(--color-text-light-1);
+  color: var(--color-primary-dark-2);
+}
+
+.btn--light::after {
+  content: "";
+  display: inline-block;
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 10rem; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transition: all 0.5s;
+}
+
+.btn--light:hover::after {
+  transform: scale(1.4, 1.6);
+  opacity: 0;
+}
+
+.btn--centerd {
+  align-self: end;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+/* NOTE: TOP NAV -----------------------------------------------------------------------  */
+
+/* .nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-primary-dark-2),
+    var(--color-primary)
+  );
+}
+
+.nav__logo {
+  background-color: var(--color-primary-light-2);
+  height: 4rem;
+  width: 4rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: none;
+  gap: 2rem;
+}
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-text-light-1);
+  font-size: 1.8rem;
+  font-weight: var(--font-bold);
+} */
+
+/* NAVIGATION MINIMALISTIC */
+
+/* HEADER ------------------------ */
+
+@media only screen and (max-width: 75em) {
+  body {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
 }

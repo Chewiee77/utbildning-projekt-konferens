@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landingpage for a fictional conference in Karlstad, arranged by the fictional company Digi Royal"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/2x/Asset 1@2xfavicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,39 +17,520 @@
     />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/landingpage.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/ticket.css" />
     <title>Digi Royal Conferences: Karlstad 9/12 - 11/12 2022</title>
   </head>
   <body>
-    <nav class="nav">Navigation bar</nav>
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="navigation__btn">
+      <span class="navigation__icon"></span>
+    </label>
+    <div class="navigation__popin">&nbsp;</div>
 
-    <header class="header">Hero</header>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="#about"
+            class="navigation__link"
+            ><span>01</span>About</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="#speakers"
+            class="navigation__link"
+            ><span>02</span>Speakers</a
+          >
+        </li>
+
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="#gallery"
+            class="navigation__link"
+            ><span>03</span>Gallery</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="#testimonials"
+            class="navigation__link"
+            ><span>04</span>Testimonials</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            onclick="document.querySelector('.navigation__checkbox').checked=false"
+            href="#booking"
+            class="navigation__link"
+            ><span>05</span>Book now</a
+          >
+        </li>
+      </ul>
+      <button class="navigation" aria-label="navigation-button"></button>
+    </nav>
+
+    <!-- <nav class="nav">
+      <div class="nav__logo">LOGO HERE</div> -->
+    <!-- TODO: Logo, img or svg? change to the semantic html and style accordingly -->
+    <!-- <ul class="nav__list">
+        <li class="nav__list-item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Speakers</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Scedule</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Gallery</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Testimonials</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">Book now</a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <header class="header" id="top">
+      <div class="header__logo">
+        <img src="/img/2x/Asset 1@2x.png" alt="Digi royal logo" />
+      </div>
+      <div class="header__text-container">
+        <h1 class="header__text">
+          <span class="header__text--main header__text--main-1"
+            >Webdeveloper
+            <span class="header__text--main header__text--main-2"
+              >Conference</span
+            ></span
+          >
+        </h1>
+
+        <p class="header__text--secondary">Karlstad</p>
+        <p class="header__text--tertiary">9/12 - 11/12</p>
+        <p class="header__text--year">2022</p>
+
+        <a href="#speakers" class="btn btn--light btn--animated btn--centered"
+          >See our speakers</a
+        >
+      </div>
+    </header>
 
     <main>
-      <section class="about">About section</section>
-
-      <section class="speakers">Theese are some of the speakers</section>
-
-      <section class="schedule">3 day schedule</section>
-
-      <section class="gallery">
-        <div class="gallery-container">img gallery</div>
+      <section class="about" id="about">
+        <h2 class="heading-secondary">Inspiring you since 2016</h2>
+        <div class="about-container">
+          <div class="about__img-content">
+            <div class="about__img-container">
+              <img
+                src="/img/fotis-fotopoulos-DuHKoV44prg-unsplash.webp"
+                alt="keayboard infront of a screen full of code"
+                class="about__img"
+              />
+            </div>
+          </div>
+          <div class="about__text-content">
+            <p class="about__text about__text--large">
+              2016 marked the beginning of something extraordinary!
+            </p>
+            <p class="about__text about__text--small">
+              Since that year we have brought together the most inspiring people
+              shaping digital content.
+            </p>
+            <p class="about__text about__text--small">
+              Our speakers are always focused on inspiring you with ideas you
+              can take action on. Focusing on both designing and building
+              digital!
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="testimonials">
-        testimonial section video background?
+      <section class="speakers" id="speakers">
+        <h2 class="heading-secondary heading-dark">Meet the speakers</h2>
+        <div class="speaker-container">
+          <figure class="speaker__item">
+            <img
+              src="/img/speaker-1.webp"
+              alt="Jeff leaning against the wall"
+              class="speaker__img"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Jeff Bloom</h3>
+            <h4 class="speaker__keynote">Laying the grid</h4>
+            <p class="speaker__usp">
+              Why should you use CSS grid!? Jeff explains in a passionate way
+              the power of the grid and why it is such a powerfull tool for
+              creating amazing and responsive layouts
+            </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <figure class="speaker__item speaker__item-z">
+            <img
+              src="/img/speaker-2.webp"
+              alt="Mary posing for the camera"
+              class="speaker__img"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">Mary Wright</h3>
+            <h4 class="speaker__keynote">Prototyping in Figma</h4>
+            <p class="speaker__usp">
+              Get a better knowledge in Figma. Learn to master Components, auto
+              layout, variants and prototyping. These are the key tools in
+              making your life with Figma more enjoyable.
+            </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <figure class="speaker__item">
+            <img
+              src="/img/speaker-g1021fe064_1920.webp"
+              alt="John inspiring people on stage"
+              class="speaker__img"
+            />
+          </figure>
+          <div class="speaker__text-content">
+            <h3 class="speaker__heading">John Bauer</h3>
+            <h4 class="speaker__keynote">Should we animate?</h4>
+            <p class="speaker__usp">
+              Learn the awesomness of animations. When, where and what should we
+              animate? Can there be to much animations? Join John as he dives
+              deep into animations in CSS.
+            </p>
+          </div>
+        </div>
+        <a href="/speakers.html" class="speakers__link"
+          >See all the speakers &rarr;</a
+        >
       </section>
 
-      <section class="bookings">Ticket cards that leads to pop-up</section>
+      <section class="gallery" id="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img
+            src="/img/antenna-FDV1BaKNKEo-unsplash (3).webp"
+            alt="audience listening to speaker"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img
+            src="/img/paul-hanaoka-6FqkGMOLskY-unsplash.webp"
+            alt="Signs showing conference locations"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img
+            src="/img/blurred-background-event-concert-charity-260nw-707340061.webp"
+            alt="Blurred picture from the dinner "
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img
+            src="/img/pexels-luis-quintero-2774556.webp"
+            alt="audience listening to speaker"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img
+            src="/img/kane-reinholdtsen-LETdkk7wHQk-unsplash.webp"
+            alt="Close/up of microphone"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img
+            src="/img/pexels-henri-mathieusaintlaurent-8348624.webp"
+            alt="Man in baseballcap answering a question from the audience"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img
+            src="/img/pexels-matheus-bertelli-3321796.webp"
+            alt="Man sitting on stage on a chair"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img
+            src="/img/pexels-rodnae-productions-7647958.webp"
+            alt="Man giving a speech"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+          <img
+            src="/img/pexels-rfstudio-3811082.webp"
+            alt="People attending a workshop"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+          <img
+            src="/img/product-school-S3hhrqLrgYM-unsplash.webp"
+            alt="Excited man holding a lecture"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--11">
+          <img
+            src="/img/pexels-matheus-bertelli-3321796.webp"
+            alt="Close up of the man sitting on the stage"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--12">
+          <img
+            src="/img/pexels-fauxels-3183172.webp"
+            alt="People shaking hands after workshop"
+            class="gallery__img"
+          />
+        </figure>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source
+              src="/img/coverr-coding-technology-5974-1080p.mp4"
+              type="video/mp4"
+            />
+
+            Your browser is not supported!
+          </video>
+        </div>
+        <div>
+          <h2 class="testimonials__heading">Conferences that inspire</h2>
+        </div>
+        <div class="testimonial-container">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="/img/customer-3.jpg"
+                alt="Happy visitor profile picture"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Lisa Myhr</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-story">
+                I came back to work bursting with inspiration!
+              </h3>
+              <p>
+                The Webdeveloper conference is so inspiring. Coming to this
+                place every year fills me with inspiration, knowledge and ideas
+                that lasts a long time. The speakers are great and passionate
+                about the subject they speak about, and the food is great to!
+              </p>
+            </div>
+          </div>
+
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="/img/customer-5.jpg"
+                alt="Happy visitor profile picture"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Ivan Byh</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-story">
+                I always leave these days filled with energy
+              </h3>
+              <p>
+                Everyone and everything needs to refuel now and then. This
+                conference is the best place for me to recharge my batteries and
+                revitalize my passion in webdevelopment. If you aspire to become
+                a better developer you really should come!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bookings" id="booking">
+        <h2 class="heading-secondary heading-dark">Tickets available</h2>
+        <div class="ticket-container">
+          <div class="ticket">
+            <div class="ticket__side ticket__side--front">
+              <div class="ticket__img ticket__img--1">&nbsp;</div>
+              <h3 class="ticket__heading">
+                <span class="ticket__heading-span ticket__heading-span--1"
+                  >The curios one 1 day pass</span
+                >
+              </h3>
+              <div class="ticket__details">
+                <ul>
+                  <li>Access to keynotes</li>
+                  <li>Lunch included</li>
+                  <li>Free t-shirt</li>
+                  <li>Arrive the day you want</li>
+                  <li>Goodiebag included</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ticket__side ticket__side--back ticket__side--back-1">
+              <div class="ticket__cta">
+                <div class="ticket__price-box">
+                  <p class="ticket__price-only">Only</p>
+                  <p class="ticket__price-value">999 SEK</p>
+                </div>
+                <a href="/booking.html" class="btn btn--light">Book now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ticket ticket__recomend">
+            <div class="ticket__side ticket__side--front">
+              <div class="ticket__img ticket__img--2">&nbsp;</div>
+              <h3 class="ticket__heading">
+                <span class="ticket__heading-span ticket__heading-span--2"
+                  >The know it all 3 day pass</span
+                >
+              </h3>
+              <div class="ticket__details">
+                <ul>
+                  <li>Digi Royal VIP</li>
+                  <li>Access to all keynotes</li>
+                  <li>VIP Access to dinner and Party</li>
+                  <li>Free snacks and beverages</li>
+                  <li>Goodiebag and t-shirt included</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ticket__side ticket__side--back ticket__side--back-2">
+              <div class="ticket__cta">
+                <div class="ticket__price-box">
+                  <p class="ticket__price-only">Only</p>
+                  <p class="ticket__price-value">1999 SEK</p>
+                </div>
+                <a href="/booking.html" class="btn btn--light">Book now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ticket">
+            <div class="ticket__side ticket__side--front">
+              <div class="ticket__img ticket__img--3">&nbsp;</div>
+              <h3 class="ticket__heading">
+                <span class="ticket__heading-span ticket__heading-span--3"
+                  >The aspiring one 2 day pass</span
+                >
+              </h3>
+              <div class="ticket__details">
+                <ul>
+                  <li>Access to keynotes</li>
+                  <li>Lunch included</li>
+                  <li>Access to Dinner and afterparty</li>
+                  <li>Goodiebag and t-shirt included</li>
+                  <li>Free cookies</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ticket__side ticket__side--back ticket__side--back-3">
+              <div class="ticket__cta">
+                <div class="ticket__price-box">
+                  <p class="ticket__price-only">Only</p>
+                  <p class="ticket__price-value">1499 SEK</p>
+                </div>
+                <a href="/booking.html" class="btn btn--light">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <nav class="footer__nav">Footer Navigation</nav>
-      <div class="footer__socials">Icons for our socials</div>
-      <div class="copyright">
-        <p>
-          &copy; 2022 by Andreas Andersson. Feel free to use this page for
-          inspiration.
-        </p>
+      <div class="footer__logo">
+        <img src="/img/2x/Asset 1@2x.png" alt="Digi royal logo" />
+      </div>
+      <div class="footer-content">
+        <nav class="footer__nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="/landingpage/index.html#about" class="footer-nav__link"
+                >About</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a
+                href="/landingpage/index.html#speakers"
+                class="footer-nav__link"
+                >Speakers</a
+              >
+            </li>
+
+            <li class="footer-nav__item">
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Contact</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="mailto:chewiee77@gmail.com" class="footer-nav__link"
+                >Careers</a
+              >
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">To top</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-content__text">
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+              target="_blank"
+              ><img src="/img/linkedin.svg" alt="linkedin logo"
+            /></a>
+            <a href="https://www.instagram.com/chewiee77_ttv/" target="_blank"
+              ><img src="/img/instagram.svg" alt="instagram logo"
+            /></a>
+            <a href="https://twitter.com/Chewiee77" target="_blankl"
+              ><img src="/img/twitter.svg" alt="twitter logo"
+            /></a>
+            <a href="https://www.twitch.tv/chewiee77" target="_blank"
+              ><img src="/img/twitch.svg" alt="twitch logo"
+            /></a>
+            <a href="https://www.facebook.com/Chewiee77/" target="_blank"
+              ><img src="/img/facebook2.svg" alt="facebook logo"
+            /></a>
+          </div>
+          <div class="copyright">
+            <p>
+              Built by
+              <a
+                href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+                target="_blank"
+                class="footer__link"
+                >Andreas Andersson</a
+              >
+              as part of the HTML/CCS course at folkuniversitet Karlstad.
+              Copyright &copy; by Andreas Andersson. You are 100% allowed to use
+              this webpage for both personal and commercial use, but not to
+              claim it as your own design. A credit to me, the author,
+              <a
+                href="https://www.linkedin.com/in/andreas-andersson-310081109/"
+                target="_blank"
+                class="footer__link"
+                >Andreas Andersson</a
+              >, is of course highly appreciated!
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
