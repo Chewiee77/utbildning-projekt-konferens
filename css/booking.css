@@ -150,7 +150,13 @@ main {
   color: var(--color-invalid);
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 37.5em) {
+  .form__input--radio[data-error]::after {
+    top: 0.3rem;
+    left: 10rem;
+  }
+}
+@media only screen and (max-width: 18.75em) {
   .form__input--radio[data-error]::after {
     content: "(Choose one)";
   }
