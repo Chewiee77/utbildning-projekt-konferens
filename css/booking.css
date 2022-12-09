@@ -123,7 +123,7 @@ main {
   transition: all 0.3s;
 }
 
-.form__input--radio > input[type="radio"]:checked ~ .form__label--radio {
+.form__input--radio > input[type="radio"]:checked:valid ~ .form__label--radio {
   background-color: var(--color-valid);
   outline: var(--color-valid);
 }
@@ -131,7 +131,9 @@ main {
   outline: inset var(--color-primary);
   box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.2);
 }
-.form__input--radio > input[type="checkbox"]:checked ~ .form__label--radio {
+.form__input--radio
+  > input[type="checkbox"]:checked:valid
+  ~ .form__label--radio {
   background-color: var(--color-valid);
   outline: var(--color-valid);
 }
@@ -140,28 +142,10 @@ main {
   box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.2);
 }
 
-.form__input--radio[data-error]::after {
-  content: attr(data-error);
-  position: absolute;
-  top: 0.3rem;
-  left: 10rem;
+.error-msg {
   font-size: 1.2rem;
   color: var(--color-invalid);
 }
-
-@media only screen and (max-width: 18.75em) {
-  .form__input--radio[data-error]::after {
-    content: "(Choose one)";
-  }
-}
-
-/* .form__input--radio[data-error]::after:valid {
-  content: attr(data-error);
-  font-size: 1.2rem;
-  margin-left: 1rem;
-  color: var(--color-invalid);
-  opacity: 0;
-} */
 
 .form__label--radio:hover {
   background-color: var(--color-valid);
@@ -241,7 +225,8 @@ main {
     width: 100%;
   }
   input[type="text"] {
-    caret-shape: none;
+    caret-shape: auto;
+    caret-color: var(--color-text-dark-1);
   }
 }
 

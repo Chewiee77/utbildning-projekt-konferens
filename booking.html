@@ -140,13 +140,13 @@
               <label
                 for=""
                 class="input-box__label form__label form__label--main"
-                >Food Options</label
+                >Food Options
+                <span class="error-msg"
+                  >(Please choose one alternative)</span
+                ></label
               >
               <div class="form__input--radio-container">
-                <div
-                  class="form__input--radio"
-                  data-error="(Please choose one alternative!)"
-                >
+                <div class="form__input--radio">
                   <input
                     type="radio"
                     class="form__input"
@@ -232,13 +232,13 @@
               <label
                 class="input-box__label form__label form__label--main"
                 data-error="(Please choose one alternative!)"
-                >Choose ticket</label
+                >Choose ticket
+                <span class="error-msg"
+                  >(Please choose one alternative)</span
+                ></label
               >
               <div class="form__input--radio-container">
-                <div
-                  class="form__input--radio"
-                  data-error="(Please choose one alternative!)"
-                >
+                <div class="form__input--radio">
                   <input
                     type="radio"
                     class="form__input"
@@ -282,7 +282,6 @@
             </div>
           </form>
         </div>
-        <div class="form-empty">&nbsp;</div>
       </section>
     </main>
 
@@ -348,8 +347,8 @@
               >
               as part of the HTML/CCS course at folkuniversitet Karlstad.
               Copyright &copy; by Andreas Andersson. You are 100% allowed to use
-              this webpage for both personal and commercial use, but not to
-              claim it as your own design. A credit to me, the author,
+              this webpage for personal use, but not to claim it as your own
+              design. A credit to me, the author,
               <a
                 href="https://www.linkedin.com/in/andreas-andersson-310081109/"
                 target="_blank"
@@ -361,15 +360,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      document
-        .querySelectorAll(".form__input--radio[data-error] .form__input")
-        .forEach((errorText) => {
-          errorText.addEventListener("input", () =>
-            errorText.parentElement.removeAttribute("data-error")
-          );
-        });
-    </script>
   </body>
 </html>
