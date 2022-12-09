@@ -53,6 +53,7 @@ main {
 }
 
 .form__input-box--radio {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -139,6 +140,30 @@ main {
   box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.2);
 }
 
+.form__input--radio[data-error]::after {
+  content: attr(data-error);
+  position: absolute;
+  top: 0.4rem;
+  left: 11rem;
+  font-size: 1.2rem;
+  /* margin-left: 1rem; */
+  color: var(--color-invalid);
+}
+
+@media only screen and (max-width: 300px) {
+  .form__input--radio[data-error]::after {
+    content: "(Choose one)";
+  }
+}
+
+/* .form__input--radio[data-error]::after:valid {
+  content: attr(data-error);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: var(--color-invalid);
+  opacity: 0;
+} */
+
 .form__label--radio:hover {
   background-color: var(--color-valid);
 }
@@ -215,6 +240,10 @@ main {
   }
   .form__input-box {
     width: 100%;
+  }
+  input[type="text"] {
+    caret-shape: bar;
+    caret-color: var(--color-text-dark-1);
   }
 }
 

@@ -412,11 +412,14 @@
   text-transform: uppercase;
   font-size: 1.6rem;
   border-bottom: 2px solid var(--color-text-dark-1);
+  transition: all 0.3s;
 }
 
 .speakers__link:hover,
 .speakers__link:active {
   transform: translateY(-2px);
+  color: var(--color-primary-dark-1);
+  border-bottom: 2px solid var(--color-primary-dark-1);
 }
 
 @media only screen and (min-width: 112.5em) {
@@ -463,9 +466,7 @@
   .speaker__item {
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     min-height: 15rem;
-  }
-  .speaker__img {
-    height: 40vw;
+    max-width: 70%;
   }
 }
 

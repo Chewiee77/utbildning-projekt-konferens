@@ -143,7 +143,10 @@
                 >Food Options</label
               >
               <div class="form__input--radio-container">
-                <div class="form__input--radio">
+                <div
+                  class="form__input--radio"
+                  data-error="(Please choose one alternative!)"
+                >
                   <input
                     type="radio"
                     class="form__input"
@@ -226,11 +229,16 @@
               </div>
             </div>
             <div class="form__input-box--radio">
-              <label class="input-box__label form__label form__label--main"
-                >Choose your pass</label
+              <label
+                class="input-box__label form__label form__label--main"
+                data-error="(Please choose one alternative!)"
+                >Choose ticket</label
               >
               <div class="form__input--radio-container">
-                <div class="form__input--radio">
+                <div
+                  class="form__input--radio"
+                  data-error="(Please choose one alternative!)"
+                >
                   <input
                     type="radio"
                     class="form__input"
@@ -353,5 +361,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document
+        .querySelectorAll(".form__input--radio[data-error] .form__input")
+        .forEach((errorText) => {
+          errorText.addEventListener("input", () =>
+            errorText.parentElement.removeAttribute("data-error")
+          );
+        });
+    </script>
   </body>
 </html>
