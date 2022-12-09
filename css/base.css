@@ -154,45 +154,6 @@ btn:visited {
   animation-fill-mode: backwards;
 }
 
-/* NOTE: TOP NAV -----------------------------------------------------------------------  */
-
-/* .nav {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  padding: 2rem;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--color-primary-dark-2),
-    var(--color-primary)
-  );
-}
-
-.nav__logo {
-  background-color: var(--color-primary-light-2);
-  height: 4rem;
-  width: 4rem;
-}
-
-.nav__list {
-  list-style: none;
-  display: none;
-  gap: 2rem;
-}
-
-.nav__link {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--color-text-light-1);
-  font-size: 1.8rem;
-  font-weight: var(--font-bold);
-} */
-
-/* NAVIGATION MINIMALISTIC */
-
-/* HEADER ------------------------ */
-
 @media only screen and (max-width: 75em) {
   body {
     padding: 0;

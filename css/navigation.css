@@ -2,7 +2,6 @@
   width: 2.7rem;
   background: transparent;
   border: none;
-  /* cursor: pointer; */
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
@@ -82,7 +81,6 @@
 .navigation__link--toggle {
   position: absolute;
   background-color: transparent;
-  /* z-index: 1900; */
   height: 5rem;
   width: 20rem;
   cursor: pointer;

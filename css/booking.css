@@ -11,10 +11,6 @@ main {
 }
 
 .booking-container {
-  /* position: relative; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   margin: 6rem auto;
   width: 80%;
   background-image: linear-gradient(
@@ -47,7 +43,6 @@ main {
 .form__input-box {
   display: flex;
   justify-content: space-between;
-  /* gap: 1.5rem; */
   flex-wrap: wrap;
   width: 60%;
 }
@@ -68,11 +63,6 @@ main {
 .form__label--main {
   font-weight: var(--font-bold);
 }
-
-/* .input-box__label {
-  display: flex;
-  justify-content: flex-start;
-} */
 
 .form__input {
   font-size: 1.6rem;
@@ -112,7 +102,6 @@ main {
   background-color: var(--color-invalid);
   color: var(--color-text-light-1);
   padding: 0.5rem 1rem;
-  /* border-radius: 10rem; */
   transform: skewX(-12deg);
   box-shadow: 0 1rem 2rem rgba(22, 0, 30, 0.3);
   min-width: 12rem;
