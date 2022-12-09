@@ -143,19 +143,12 @@ main {
 .form__input--radio[data-error]::after {
   content: attr(data-error);
   position: absolute;
-  top: 0.4rem;
-  left: 11rem;
+  top: 0.3rem;
+  left: 10rem;
   font-size: 1.2rem;
-  /* margin-left: 1rem; */
   color: var(--color-invalid);
 }
 
-@media only screen and (max-width: 37.5em) {
-  .form__input--radio[data-error]::after {
-    top: 0.3rem;
-    left: 10rem;
-  }
-}
 @media only screen and (max-width: 18.75em) {
   .form__input--radio[data-error]::after {
     content: "(Choose one)";
@@ -248,8 +241,7 @@ main {
     width: 100%;
   }
   input[type="text"] {
-    caret-shape: bar;
-    caret-color: var(--color-text-dark-1);
+    caret-shape: none;
   }
 }
 

@@ -751,6 +751,13 @@
   color: inherit;
   text-transform: uppercase;
   font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.footer-nav__link:hover,
+.footer-nav__link:active {
+  transform: rotate(5deg);
+  color: var(--color-text-light-2);
 }
 
 .footer__socials {
